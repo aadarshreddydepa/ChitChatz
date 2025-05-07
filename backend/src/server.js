@@ -5,7 +5,9 @@ dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT;
-
+app.get("/",(req,res)=>{
+    res.send("Hello and Welcome to ChitChatz");
+});
 app.use("/api/auth",authRoutes);
 
 app.listen(PORT , () =>{
