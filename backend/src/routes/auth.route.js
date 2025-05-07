@@ -3,7 +3,7 @@ import express from "express";
 const router = express.Router();
 
 router.get("/",(req,res)=>{
-    res.send("Hello and Welcome to my App");
+    res.send("Hello and Welcome to ChitChatz");
 })
 router.get("/signup",(req,res)=>{
     res.send("SignUp Route");
